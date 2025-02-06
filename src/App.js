@@ -9,7 +9,7 @@ import ONALA from './Pages/ONALA';
 import Sale from './Pages/Sale';
 import TrangChu from './Pages/TrangChu';
 import GioiThieu from './Pages/GioiThieu';
-
+import Register from './Pages/Register';
 
 
 
@@ -26,6 +26,7 @@ function App() {
             <Route path='/giohang' element={<GioHang/>} />
             <Route path='/onala' element={<ONALA/>} />
             <Route path='sale' element={<Sale/>} />
+            <Route path= 'register' element = {<Register/>}/>
             
           </Route>
          
