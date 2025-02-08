@@ -1,0 +1,32 @@
+
+.button {
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 45px;
+    width: 520px;
+    border-radius: 30px ;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.btnLogin {
+    background-color: #189D35 !important;
+    border-color: #189D35 !important;
+}
+.btnLogin:hover {
+    background-color: #189D35 !important;
+    border-color: #189D35 !important;
+    opacity: 0.7;
+}
+.btnGG {
+    background-color: #E53737 !important;
+    border-color: #E53737 !important;
+}
+.btnGG:hover {
+    background-color: #E53737 !important;
+    border-color: #E53737 !important;
+    opacity: 0.7;
+}
+

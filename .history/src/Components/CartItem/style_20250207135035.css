@@ -1,0 +1,39 @@
+
+.cartItem {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: white;
+    width: 90%;
+    height: 200px;
+}
+.item1 {
+    grid-column: span 3;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.itemNote {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 27px;
+}
+
+
+.item2, .item3, .item4, .item5 {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+}
+
+.btnNote {
+    border: none;
+    background-color: #A3D5DA ;
+    width: 131px;
+    height: 34px;
+    te
+}

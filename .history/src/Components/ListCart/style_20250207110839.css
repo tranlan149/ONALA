@@ -1,0 +1,8 @@
+.listCartHead {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+.text1 {
+    grid-column: span 2;
+}

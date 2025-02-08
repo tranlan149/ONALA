@@ -1,0 +1,8 @@
+.cartEmptyBody {
+    position: relative;
+}
+
+.cartEmptyContent {
+    position: absolute;
+    top: 43px;
+}

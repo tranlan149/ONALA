@@ -1,0 +1,5 @@
+.listCartHead {
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: inherit;
+}

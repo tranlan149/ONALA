@@ -1,0 +1,10 @@
+.cartEmptyBody {
+    position: relative;
+}
+
+.cartEmptyContent {
+    position: absolute;
+    top: 2.688rem;
+    left: 3.75rem;
+    font-size: 60px;
+}

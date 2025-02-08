@@ -1,0 +1,121 @@
+
+.contentForm {
+    margin: 80px 164px;
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+}
+:link {
+    font-weight: 600;
+}
+.formContainer {
+    margin-left: 176px;
+}
+.right-align {
+    text-align: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.underlineInput {
+    width: 520px;
+    border: none; 
+    border-bottom: 1px solid #000; 
+    outline: none; 
+    padding: 8px; 
+    font-size: 20px;
+    background-color: #FCF0F0;
+    
+}
+:where(.css-dev-only-do-not-override-cdzvx5) .underlineInput:focus,
+:where(.css-dev-only-do-not-override-cdzvx5) .underlineInput:hover {
+    
+    background-color: #FCF0F0 !important;
+}
+:where(.css-dev-only-do-not-override-cdzvx5) .retrieveInput {
+    background-color: #ffffff !important;
+    font-size: 14px ;
+    width: 630px;
+    border-bottom: 1px solid #E53737;
+}
+.underlineInput:hover {
+    background-color: #FCF0F0;
+    border-bottom: 1px solid #4CAF50;
+
+}
+.underlineInput:focus,
+.underlineInput:focus-within,
+.underlineInput:focus-within {
+    border-bottom-color: #4CAF50; 
+    background-color: #FCF0F0;
+
+}
+.retrieveInput:hover {
+    background-color: #ffffff;
+    
+
+}
+.retrieveInput:focus,
+.retrieveInput:focus-within {
+    border-bottom-color: #4CAF50 ; 
+    background-color: #ffffff !important;
+
+}
+
+
+
+.ant-input-affix-wrapper,
+.ant-input
+{
+    border-radius: 0 !important;
+}
+
+:where(.css-dev-only-do-not-override-cdzvx5) .ant-col-offset-8 {
+    margin: 0 !important;
+}
+:where(.css-dev-only-do-not-override-cdzvx5) .ant-input:focus,
+:where(.css-dev-only-do-not-override-cdzvx5).ant-input-outlined:focus, 
+:where(.css-dev-only-do-not-override-cdzvx5).ant-input-outlined:focus-within,
+:where(.css-dev-only-do-not-override-cdzvx5).ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus,
+:where(.css-dev-only-do-not-override-cdzvx5).ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus,
+:where(.css-dev-only-do-not-override-cdzvx5).ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):focus-within,
+:where(.css-dev-only-do-not-override-cdzvx5).ant-input-outlined,
+:where(.css-dev-only-do-not-override-cdzvx5).ant-input-outlined.ant-input-status-error:not(.ant-input-disabled):hover
+
+{
+    outline: none;
+    box-shadow: none;
+    
+
+}
+:where(.css-dev-only-do-not-override-cdzvx5).ant-input-outlined.ant-input-status-error:not(.ant-input-disabled){
+    border: none; /* Bỏ các đường viền mặc định */
+    border-bottom: 1px solid #ff4d4f;
+    background-color: #FCF0F0;
+
+}
+:where(.css-dev-only-do-not-override-cdzvx5).ant-col-8 {
+    flex: 0;
+}
+:where(.css-dev-only-do-not-override-cdzvx5).ant-col-16 {
+    max-width: 100% !important;
+}
+:where(.css-dev-only-do-not-override-cdzvx5).ant-checkbox-wrapper.ant-checkbox-wrapper-in-form-item input[type="checkbox"],
+:where(.css-dev-only-do-not-override-cdzvx5).ant-checkbox .ant-checkbox-inner{
+    width: 28px;
+    height: 28px;
+}
+
+
+.ant-modal .ant-modal-title {
+    text-align: center;
+    font-size: 20px;
+    padding: 0 115px;
+}
+.ant-modal-body >p {
+    text-align: center;
+}

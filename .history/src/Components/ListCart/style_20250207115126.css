@@ -1,0 +1,11 @@
+.listCartHead {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: white;
+    width: 90%;
+    margin-right: ;
+}
+.text1 {
+    grid-column: span 3;
+    margin-left: 10px;
+}

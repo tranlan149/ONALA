@@ -1,0 +1,98 @@
+
+.cartItem {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    font-weight: 500;
+    
+}
+.item1 {
+    grid-column: span 3;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.itemNote {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 27px;
+}
+
+.itemNote p {
+    overflow-wrap: break-word;
+    white-space: normal;   
+    width: 150px;            
+    
+}
+
+.item2, .item3, .item4, .item5 {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    
+}
+.item5 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item5 p, .item4 {
+    color: #FF3B30;
+}
+
+.btnNote, .btnOK {
+    border: none;
+    background-color: #A3D5DA ;
+    width: 131px;
+    height: 34px;
+    text-align: center;
+    color: #FF3B30;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn_count {
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+.text_count {
+    box-sizing: border-box;
+    border: 1px  solid  black;
+    height: 30px;
+    width: 40px;
+    text-align: center;
+}
+
+
+.modalNote {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 30%;
+    background-color: white;
+    
+}
+
+.inputNote {
+    margin-left: 24%;
+    margin-bottom: 14px;
+    width: 73%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+.textNote {
+    margin-left: 24%;
+    margin-bottom: 20px;
+}

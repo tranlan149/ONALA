@@ -1,0 +1,26 @@
+.cartEmptyBody {
+    position: relative;
+}
+
+.cartEmptyContent {
+    position: absolute;
+    top: 2.688rem;
+    left: 3.75rem;
+    font-size: 30px;
+    font-weight: 600;
+    color:#A80101 ;
+}
+.cartEmptyContent p {
+    margin: 0;
+    margin-bottom: 24px;
+    color: black;
+}
+
+.cartEmptyContent button {
+    position: absolute;
+    top: 14.125rem;
+    left: 0;
+    font-size: 30px;
+    width: 414px;
+    border: #A80101;
+}
