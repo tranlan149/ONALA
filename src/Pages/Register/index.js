@@ -1,5 +1,5 @@
 import { Button, Form, Input, Checkbox } from 'antd';
-import '../DangNhap/style.css'
+import '../Login/style.css'
 import logo from "../../image/logo.png"
 import clsx from 'clsx';
 import { Link } from 'react-router-dom';

@@ -29,7 +29,7 @@ function Layout(){
                                 <NavLink to='/bestseller'>BESTSELLER</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/dathang'>Đặt hàng </NavLink>
+                                <NavLink to='/order'>Đặt hàng </NavLink>
                             </li>
                             <li>
                                 <NavLink to='/sale'>SALE</NavLink>
@@ -42,12 +42,12 @@ function Layout(){
                     <div className='layout_menu_2'>
                         <ul>
                             <li>
-                                <NavLink to='/dangnhap'>
+                                <NavLink to='/login'>
                                     <RiFileUserFill style={{color:'#000 ', fontSize:'30px'}}/>
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to='/giohang'>
+                                <NavLink to='/cart'>
                                     <FaShoppingBag style={{color:'#000 ', fontSize:'30px'}}/>
                                 </NavLink>
                             </li>
@@ -99,7 +99,7 @@ function Layout(){
                         <h2>ONALA FASTFOOD</h2>
                         <ul>
                             <li>
-                                <NavLink to='/gioithieu'>Giới thiệu</NavLink>
+                                <NavLink to='/recommend'>Giới thiệu</NavLink>
                             </li>
                             <li>
                                 <NavLink to='/'>Tin tức</NavLink>
