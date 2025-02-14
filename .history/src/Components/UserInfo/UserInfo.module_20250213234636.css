@@ -1,0 +1,10 @@
+
+.inputUserInfo {
+    width: 280px;
+    border: 1px solid #6DB3BA ;
+    box-shadow: 0px 4px 4px ;
+}
+.formContainer {
+    display: flex;
+    
+}

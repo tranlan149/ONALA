@@ -1,0 +1,10 @@
+.navOrderStatus {
+    display: grid;
+    grid-template-columns: repeat(4,1fr)
+    jus
+    
+}
+
+.active {
+    border-bottom: black;
+}

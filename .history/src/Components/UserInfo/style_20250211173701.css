@@ -1,0 +1,18 @@
+span {
+    display: flex
+}
+.userInfo {
+    margin-left: 157px;
+}
+.userInfoContainer {
+    position: relative;
+    padding-top: 3;
+}
+.iconEdit {
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+#info {
+    margin-top: 50px;
+}

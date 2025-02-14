@@ -1,0 +1,32 @@
+.managementContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 7%;
+    width: 100%;
+}
+
+.sideBarManagement {
+    width: 330px;
+    background-color: #A3D5DA;
+    height: 100vh;
+    flex-grow: 2;
+}
+
+.userContain {
+    display: flex;
+    flex-direction: column;
+    margin-left: 51px;
+    font-size: 18px;
+    flex-grow: 1;
+}
+.contentManagement {
+
+}
+
+.btnUsertab {
+    background-color: #FCF0F0;
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 55px;
+    width: 218px;
+}

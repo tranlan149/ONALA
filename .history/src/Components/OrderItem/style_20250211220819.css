@@ -1,0 +1,16 @@
+.orderItem,
+.item_rightTop,
+.item_rightBot,
+.item-left {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.orderContent {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.item_right {
+    grid-column: span 2;
+}

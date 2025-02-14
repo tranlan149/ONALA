@@ -1,0 +1,20 @@
+.orderContent {
+    width: 80%;
+    margin-left: 80px;
+}
+.orderContent,
+.item_rightTop,
+.item_rightBot,
+.item_left {
+    display: flex;
+    justify-content: space-between
+}
+.orderText {
+
+}
+.orderText, .item_right {
+    display: flex;
+    flex-direction: column;
+ 
+    justify-content: space-between;
+}

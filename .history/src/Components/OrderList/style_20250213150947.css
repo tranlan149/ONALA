@@ -1,0 +1,20 @@
+h2 {
+    text-align: center;
+    
+}
+.navOrderStatus {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    background-color: white;
+    margin-bottom: 26px;
+    height: 56px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.activeStatus {
+    border-bottom: 2px solid #A80101;
+    color: #A80101;
+
+}

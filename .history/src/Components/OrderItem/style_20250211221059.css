@@ -1,0 +1,9 @@
+.orderContent,
+.item_rightTop,
+.item_rightBot,
+.item_left {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+

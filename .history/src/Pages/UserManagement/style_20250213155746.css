@@ -1,0 +1,47 @@
+.managementContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+.sideBarManagement {
+    width: 330px;
+    background-color: #A3D5DA;
+    height: 100vh;
+    margin-left: 7%;
+    position: sticky;
+}
+
+.userContain {
+    display: flex;
+    flex-direction: column;
+    margin-left: 51px;
+    font-size: 18px;
+    margin-top: ;
+    
+}
+.contentManagement {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-bottom: 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.btnUsertab {
+    background-color: #FCF0F0;
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 55px;
+    width: 218px;
+    cursor: pointer;
+}
+
+#userName {
+    align-items: center;
+    
+}
+#userName >p {
+    margin-left: 12px;
+}

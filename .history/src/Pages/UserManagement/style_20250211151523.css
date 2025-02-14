@@ -1,0 +1,4 @@
+.managementContainer {
+    display: flex;
+    flex-direction: column;
+}

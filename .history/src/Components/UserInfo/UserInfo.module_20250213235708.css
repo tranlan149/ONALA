@@ -1,0 +1,23 @@
+
+.inputUserInfo {
+    width: 280px;
+    border: 1px solid #6DB3BA ;
+    box-shadow: 0px 4px 4px #00000040;
+}
+.formContainer {
+    display: flex;
+    
+}
+.btnComfirmEdit {
+    background-color: #6DB3BA !important;
+    font-weight: bold;
+    font-size: 18px;
+    color: white !important;
+    border: none;
+    border-radius: 20px;
+}
+.btnComfirmEdit:hover {
+    cursor: pointer !important;
+    background-color: #6DB3BA !important;
+    opacity: 0.8;
+}

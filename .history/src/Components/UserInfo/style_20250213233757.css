@@ -1,0 +1,35 @@
+span {
+    display: flex;
+}
+.userInfo {
+    
+    align-items: center;
+}
+.userInfoContainer {
+    margin-top: 50px;
+    position: relative;
+    padding: 35px 0;
+    width: 723px;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: 157px;
+    
+}
+.iconEdit {
+    position: absolute;
+    right: 100px;
+    top: 10px;
+    cursor: pointer;
+}
+#info {
+    margin: 50px 0 50px;
+}
+.formContainerText {
+    margin: 50px 0 50px 50px;
+    padding-left: 32px;
+    
+    
+}
+.formContainerText p {
+    margin-bottom: 32px;
+}

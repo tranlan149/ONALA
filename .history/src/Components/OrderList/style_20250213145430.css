@@ -1,0 +1,10 @@
+.navOrderStatus {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    background-color: white;
+}
+
+.active {
+    border-bottom: black;
+}

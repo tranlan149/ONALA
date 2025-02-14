@@ -1,0 +1,14 @@
+.managementContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 7%;
+}
+
+.sideBarManagement {
+    width: 330px;
+    
+}
+
+.contentManagement {
+
+}

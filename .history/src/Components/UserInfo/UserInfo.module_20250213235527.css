@@ -1,0 +1,16 @@
+
+.inputUserInfo {
+    width: 280px;
+    border: 1px solid #6DB3BA ;
+    box-shadow: 0px 4px 4px #00000040;
+}
+.formContainer {
+    display: flex;
+    
+}
+.btnComfirmEdit:h {
+    background-color: #6DB3BA !important;
+    font-weight: bold;
+    font-size: 18px;
+    color: white !important;
+}
