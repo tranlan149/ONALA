@@ -43,7 +43,7 @@ function UserInfo(props) {
     };
     return ( 
         <div className='userInfo'>
-            <h2>THÔNG TIN CÁ NHÂN</h2>
+            <h2 className='titleUserContent'>THÔNG TIN CÁ NHÂN</h2>
             <div className="userInfoContainer">
                 <AiFillEdit className='iconEdit' size={24} color="black"  
                             onClick= {handleEdit}
@@ -86,7 +86,7 @@ function UserInfo(props) {
                             },
                         ]}
                     >
-                        <span>
+                        <span className={styles.spanInput}>
                             <Input 
                                 className= {styles.inputUserInfo}
                                 name="name"
@@ -105,7 +105,7 @@ function UserInfo(props) {
                             { pattern: /^[0-9]{10}$/, message: 'Số điện thoại phải có đúng 10 chữ số!' }
                         ]}
                     >
-                        <span>
+                        <span className={styles.spanInput}>
                             <Input  name="phone"
                                     value={formData.phone}
                                     onChange={handleChange}
@@ -128,7 +128,7 @@ function UserInfo(props) {
                                     message: 'Please input your email!',
                                 }, 
                             ]}>
-                            <span>
+                            <span className={styles.spanInput}>
 
                                 <Input 
                                     name="email"
@@ -145,13 +145,13 @@ function UserInfo(props) {
                         name="address"
                         
                     >
-                        <span>
+                        <span className={styles.spanInput}>
                             <Input 
                                 name="address"
                                 value={formData.address}
                                 onChange={handleChange}
                                 className= {styles.inputUserInfo}
-                                placeholder='Tên của bạn *'
+                                placeholder='Địa chỉ của bạn *'
                             />
                         </span>
 

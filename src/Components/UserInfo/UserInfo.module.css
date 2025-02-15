@@ -22,3 +22,7 @@
     background-color: #6DB3BA !important;
     opacity: 0.8;
 }
+
+.spanInput {
+    display: flex;
+}

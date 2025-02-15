@@ -1,0 +1,9 @@
+
+
+#selectAddress {
+    display: flex;
+    justify-content: flex-start;
+}
+#selectAddress  .ant-select-selector{
+    font-size: 16px !important;
+}

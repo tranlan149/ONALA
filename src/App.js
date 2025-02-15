@@ -13,6 +13,7 @@ import Home from './Pages/Home';
 import AccountPage from './Pages/Account';
 import UserInfo from './Components/UserInfo';
 import OrderList from './Components/OrderList';
+import OrderInfo from './Pages/OrderInfo'
 function App() {
   return (
     <>
@@ -30,7 +31,7 @@ function App() {
             <Route path='/onala' element={<ONALA/>} />
             <Route path='sale' element={<Sale/>} />
             <Route path= 'register' element = {<Register/>}/>
-            
+            <Route path='orderinfo' element= {<OrderInfo/>}/>
           </Route>
          
            

@@ -35,7 +35,7 @@ function OrderList() {
     },[currentType])
     return ( 
         <div>
-            <h2>ĐƠN HÀNG CỦA BẠN</h2>
+            <h2 className="titleUserContent">ĐƠN HÀNG CỦA BẠN</h2>
             <div className="navOrderStatus"> 
                 {
                     statusOrder.map((status)=>(

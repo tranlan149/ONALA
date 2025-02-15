@@ -42,6 +42,7 @@
 
 #userName {
     align-items: center;
+    display: flex;
     
 }
 #userName >p {

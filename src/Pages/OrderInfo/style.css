@@ -1,0 +1,67 @@
+.orderInfo {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.orderInfoDetail {
+    flex-grow: 1;
+}
+.containerGeneral {
+    display: flex;
+    flex-direction: column;
+    background-color: #EFF5F6;
+    margin-bottom: 28px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px 20px;
+    width: 40.625rem;
+    
+}
+#orderInfoFrom p {
+    margin-bottom: 0;
+}
+.inputOrder {
+    background-color: #EFF5F6 !important;
+}
+.inputOrder:hover {
+    background-color: #EFF5F6 !important;
+}
+.inputOrder:focus {
+    background-color: #EFF5F6 !important;
+}
+#orderSummary {
+    height: 14.375rem;
+    width: 25rem;
+    margin-top: 4.375rem;
+}
+#orderSummary p{
+    margin: 10px;
+   
+}
+.generalCost {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#orderBtn {
+    background-color: #189D35 !important;
+    border: none;
+    border-radius: 20px;
+    width: 10rem;
+   
+}
+.btnPaymentType {
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.activePayment{
+    color: white;
+    background-color: #A80101;
+}
+.activePayment :hover{
+    color: white;
+    background-color: #A80101;
+}
