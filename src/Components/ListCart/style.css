@@ -35,3 +35,36 @@
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
+.toPayment {
+    position: relative;
+    background-color: white;
+    width: 90%;
+    height: 80px;
+    
+}
+.toPaymentFix {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+}
+#toPaymentBtn {
+    background-color: #189D35;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 52px;
+    width: 200px;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+#toPaymentBtn:hover {
+    opacity: 0.8;
+}
