@@ -1,6 +1,38 @@
+import React from "react";
+import banner from "../../image/banner.png";
+import homebutton1 from "../../image/homebutton1.png";
+import homebutton2 from "../../image/homebutton2.png";
+import homebutton3 from "../../image/homebutton3.png";
+import homebutton4 from "../../image/homebutton4.png";
+import combo1 from "../../image/combo1.png";
+import combo2 from "../../image/combo2.png";
+import combo4 from "../../image/combo4.png";
+import humberger from "../../image/humberger.png";
+import douong from "../../image/douong.png";
+import doanvat from "../../image/doanvat.png";
+import banh from "../../image/banh.png";
+import ga from "../../image/ga.png";
+import logosale1 from "../../image/logosale1.png";
+import logosale2 from "../../image/logosale2.png";
+import FoodItem from "../../Components/FoodItem";
+import SaleItem from "../../Components/SaleItem";
+import "./style.css";
 
-function Home(){
-    return(
+function Home() {
+    const foodItems = [
+        { name: "Combo 1 Người", img: combo1 },
+        { name: "Combo 2 Người", img: combo2 },
+        { name: "Combo Nhóm 4", img: combo4 },
+        { name: "Hamburger", img: humberger },
+        { name: "Gà", img: ga },
+        { name: "Đồ Uống", img: douong },
+        { name: "Bánh Ngọt", img: banh },
+        { name: "Đồ Ăn Vặt", img: doanvat }
+    ];
+
+    const sales = [logosale1, logosale2];
+
+    return (
         <>
             {/* Banner */}
             <div className="banner">

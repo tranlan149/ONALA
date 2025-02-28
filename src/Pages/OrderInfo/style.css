@@ -65,3 +65,16 @@
     color: white;
     background-color: #A80101;
 }
+.imgProBuyNow {
+    width: 180px;
+    height: 180px;
+}
+#buyNowItem {
+    display: flex;
+    justify-content: space-around;
+    background-color: #EFF5F6;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-top: 17%;
+    padding: 20px;
+}

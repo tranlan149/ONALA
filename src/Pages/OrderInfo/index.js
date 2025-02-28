@@ -2,12 +2,19 @@ import { Button, Form, Input } from 'antd';
 import FormatCost from '../../Components/FormatCost';
 import SelectDistrict from '../../Components/SelectDistrict';
 import './style.css';
-import { useState } from 'react';
-
+import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
   
 function OrderInfo() {
+    
     const [formOrder] = Form.useForm();
+    const locationProduct = useLocation()
+    const orderList = locationProduct.state?.orderList || [];
+    const isBuyNow = locationProduct.state?.buyNow || true
+    const shippingFee = 25000
 
+    const[count, setCount] = useState(orderList[0]?.quantity || 1); // áp dụng với trường hợp mua ngay
+    const [total, setTotal] = useState(0);
     const payment = [
         {
             type:'delivery',
@@ -30,7 +37,26 @@ function OrderInfo() {
         setPaymentType(type);
         formOrder.setFieldsValue({ paymentType: type });
     }
-    console.log(paymentType)
+    
+    const handleIncrease = ( ) => {
+        setCount(count+1)
+        
+    }
+    const handleDecrease = () => {
+        if (count > 1) {
+            setCount(count - 1);
+            
+        }
+        
+    };
+    useEffect (()=> {
+        const newTotal = isBuyNow
+        ? orderList[0]?.cost * count
+        : orderList.reduce((prev, item) => prev + item.cost * item.quantity, 0);
+
+        setTotal(newTotal); 
+                        
+    },[count])
     return ( 
         <div className="orderInfo">
             <div id="orderInfoDetail">
@@ -172,21 +198,39 @@ function OrderInfo() {
                     
                 </div>
             </div>
-            <div id='orderSummary' className='containerGeneral'>
-                <p>TÓM TẮT ĐƠN HÀNG</p>
-                <p>Tên món</p>
-                <div className='generalCost'>
-                    <p>TỔNG ĐƠN HÀNG :</p>
-                    <FormatCost value='000'/>
+            <div>
+                {isBuyNow && <div id='buyNowItem'>
+                    <img className='imgProBuyNow' alt={orderList[0]?.name}></img>
+                    <div>
+                        <p>{orderList[0]?.name}</p>
+                        <p>{orderList[0]?.cost}</p>
+                        <div className="item3">
+                            <button className='btn_count' onClick={handleDecrease} >-</button>
+                            <p className='text_count'>{count}</p>
+                            <button className='btn_count' onClick={handleIncrease} >+</button>
+
+                        </div>
+                    </div>
+                </div>}
+                
+                <div id='orderSummary' className='containerGeneral'>
+
+                    <p>TÓM TẮT ĐƠN HÀNG</p>
+                    <p>Tên món</p>
+                    <div className='generalCost'>
+                        <p>TỔNG ĐƠN HÀNG :</p>
+                        <FormatCost value={total}/>
+                    </div>
+                    <div className='generalCost'>
+                        <p>PHÍ VẬN CHUYỂN :</p>
+                        <FormatCost value={shippingFee}/>
+                    </div>
+                    <div className='generalCost'>
+                        <p>THÀNH TIỀN :</p>
+                        <FormatCost value={total + shippingFee}/>
+                    </div>
                 </div>
-                <div className='generalCost'>
-                    <p>PHÍ VẬN CHUYỂN :</p>
-                    <FormatCost value='000'/>
-                </div>
-                <div className='generalCost'>
-                    <p>THÀNH TIỀN :</p>
-                    <FormatCost value='000'/>
-                </div>
+
             </div>
         </div>
     );
