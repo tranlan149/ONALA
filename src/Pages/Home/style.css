@@ -1,0 +1,134 @@
+/* Banner */
+.banner {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    max-width: 1500px; /* Giới hạn tối đa */
+    margin: 0 auto; /* Căn giữa */
+}
+
+.banner img {
+    width: 100%;
+    height: auto; /* Giữ tỷ lệ ảnh */
+    display: block;
+    object-fit: cover;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    .banner {
+        max-width: 90%; /* Giảm kích thước khi màn hình nhỏ */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        max-width: 80%; /* Nhỏ hơn nữa trên màn hình nhỏ */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        max-width: 100%; /* Chiếm toàn bộ màn hình nhỏ */
+    }
+}
+
+
+/* Menu Section */
+.menu-section {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    gap: 20px; /* Khoảng cách giữa các nút */
+    margin-bottom: 30px;
+    margin-top: 20px; 
+    
+}
+.menu-box img {
+    width: 250px;
+    height: 120px;
+    border-radius: 8%;
+    object-fit: cover;
+}
+.menu-box:hover {
+
+    transform: translateY(-3px); /* Hiệu ứng nổi lên */
+}
+
+/* Danh Mục Món Ăn */
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.food-category {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+    max-width: 1060px; /* Đặt giới hạn chiều rộng để căn giữa */
+    margin: 0 auto; /* Căn giữa danh mục theo chiều ngang */
+}
+.food-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.food-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.food-item p {
+    background: #A3D5DA;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* SALE Section */
+.sale-section { 
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    margin: 20px 0; 
+}
+
+.sale-container {
+    display: flex; 
+    justify-content: space-between; 
+    width: 80%; 
+    max-width: 1100px; 
+    gap: 20px; 
+}
+
+.sale-item {
+    flex: 1; 
+    text-align: center; 
+    padding: 15px; 
+    border-radius: 10px; 
+}
+.sale-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sale-item img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+}
