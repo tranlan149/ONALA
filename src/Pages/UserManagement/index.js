@@ -1,9 +1,10 @@
 import UserInfo from '../../Components/UserInfo';
 import OrderList from '../../Components/OrderList';
+import OrderDetail  from '../../Components/OrderDetail';
 import './style.css'
 import iconUser from '../../image/iconUser.svg'
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet, useParams } from 'react-router-dom';
 
 
 function UserManagement() {
@@ -28,6 +29,7 @@ function UserManagement() {
         }
         
     }
+    const { orderCode } = useParams()
     
     
     return (
@@ -58,15 +60,23 @@ function UserManagement() {
             </div>
             <div className="contentManagement">
                 {
-                    selectedBtn==='infoBtn'?
-                    <UserInfo
-                        name='hhahaha'
-                        phone = '0192929938'
-                        email= 'nt@gmail.com'
-                        address = 'hanoi'
-                    />:<OrderList/>
+                    orderCode? (<OrderDetail orderCode={orderCode} />):
+                    (<Outlet/>)
                 }
-
+                
+                
+                {/* {orderCode ? (
+                        <OrderDetail orderCode={orderCode} />
+                    ) : selectedBtn === "orderListBtn" ? ( 
+                        <OrderList />
+                    ) : ( 
+                        <UserInfo
+                            name="hhahaha"
+                            phone="0192929938"
+                            email="nt@gmail.com"
+                            address="hanoi"
+                        />
+                )} */}
             </div>
         </div>
     );

@@ -1,5 +1,5 @@
 
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import OrderItem from "../OrderItem";
 import { useEffect, useState } from "react";
 import './style.css'
@@ -12,7 +12,7 @@ function OrderList() {
         },
         {
             type: 2,
-            content: 'Chờ Thanh Toán'
+            content: 'Chờ Xác Nhận'
         },
         {
             type: 3,
@@ -25,9 +25,18 @@ function OrderList() {
     ]
 
     const [searchParam, setSearchParam] = useSearchParams();
-    const [orderList, setOrderList] = useState([])
+    const navigate = useNavigate(); // Dùng điều hướng URL
+    const [orderList, setOrderList] = useState([]);
 
-    const currentType = parseInt(searchParam.get('type')) || 1;
+    const currentType = parseInt(searchParam.get("type")) || 1;
+
+    
+    useEffect(() => {
+        const currentPath = window.location.pathname; // Lấy path hiện tại
+        if (currentPath === "/account/purchase" && !searchParam.get("type")) {
+            navigate("?type=1", { replace: true });
+        }
+    }, [searchParam, navigate]);
 
     useEffect(()=>{
         setOrderList([])
@@ -52,33 +61,27 @@ function OrderList() {
 
             </div>
             <div className="OrderListContainer">
-                
-                <div>
-                    <p>{orderList}</p>
+                {/* {Ở đây OrderItem hiển thị products[0]
+                     1 OrderItem sẽ có nhiều sản phẩm} 
+                     Khi mà truyền props vào OrderItem 
+                     -> thì lấy phần tử [0] trong list để đại diện cho name OrderItem
+                     còn totalCost nhớ cộng tổng trước rồi mới hiện lên */}
+                <div> 
                     <OrderItem
                         imageURL=''
-                        name = 'trà đào'
+                        name = 'list order 1'
                         orderCode = 'A1292929'
-                        cost = '19828727'
+                        totalCost = '19828727'
+                        type = {currentType}
                     />
                     <OrderItem
                         imageURL=''
-                        name = 'trà đào'
-                        orderCode = 'A1292929'
-                        cost = '19828727'
+                        name = 'list order 2'
+                        orderCode = 'B1292shsh9'
+                        totalCost = '19727'
+                        type = {currentType}
                     />
-                    <OrderItem
-                        imageURL=''
-                        name = 'trà đào'
-                        orderCode = 'A1292929'
-                        cost = '19828727'
-                    />
-                    <OrderItem
-                        imageURL=''
-                        name = 'trà đào'
-                        orderCode = 'A1292929'
-                        cost = '19828727'
-                    />
+                    
                 </div>
             </div>
         </div>

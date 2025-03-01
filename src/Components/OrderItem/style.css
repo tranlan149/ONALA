@@ -36,14 +36,15 @@
     justify-content: flex-end;
 }
 #showOrderDetail,
-#buyAgain {
+#buyAgain,
+#cancelBtn {
     border-radius:  20px;
     height: 32px;
     font-size: 18px;
     border: none;
     cursor: pointer;
 }
-#buyAgain {
+#buyAgain, #cancelBtn {
     background-color:  #6DB3BA;    
     color: #A80101;
     margin-right: 10px;

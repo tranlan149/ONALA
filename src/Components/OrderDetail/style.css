@@ -1,0 +1,52 @@
+.orderDetailContainer {
+    background-color: white;
+    padding: 24px 0;
+}
+.orderInfoDetail {
+    display: flex;
+    margin: 0 46px;
+    border: 1px black solid;
+    padding: 8px 0 8px 23px;
+    border-radius: 20px;
+    position: relative;
+
+}
+#userOrderInfo,
+.orderStatus {
+    margin-left: 46px;
+}
+.totalDetail {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 46px;
+    margin-bottom: 32px;
+}
+#editInfoOrder {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    cursor: pointer;
+}
+#OrderInfoTitle,
+#userOrderInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#userOrderInfo input {
+    font-size: 16px;
+    width: 400px;
+    border:  none;
+    border-bottom: 1px black solid;
+    outline: none;
+    
+}
+.orderInfoDetail p {
+    margin: 8px;
+}
+.btnOrderDetail {
+    text-align: end;
+    margin: 16px 46px 0 0;
+}

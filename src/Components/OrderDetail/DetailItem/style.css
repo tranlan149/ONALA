@@ -1,0 +1,21 @@
+.imgDetailItem {
+    width:  160px;
+    height: 120px;
+}
+
+.detailItemContainer {
+    display: flex;
+    margin: 24px 46px;
+}
+.costDetailItem {
+    margin-left: auto;
+    color: #A80101;
+    font-weight: bold;
+    
+}
+.textDetailItem {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

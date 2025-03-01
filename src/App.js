@@ -14,6 +14,7 @@ import AccountPage from './Pages/Account';
 import UserInfo from './Components/UserInfo';
 import OrderList from './Components/OrderList';
 import OrderInfo from './Pages/OrderInfo'
+import OrderDetail from './Components/OrderDetail';
 function App() {
   return (
     <>
@@ -22,8 +23,10 @@ function App() {
             <Route path='/' element={<Home/>} />
             <Route path='/bestseller' element={<BestSeller/>} />
             <Route path='/account' element={<AccountPage/>}>
-              <Route path='info' element = {<UserInfo/>}/>
-              <Route path='purchase' element= {<OrderList/>}/>
+              <Route path="info" element={<UserInfo />} />
+              <Route path="purchase" element={<OrderList />}>
+                <Route path="orderdetail/:orderCode" element={<OrderDetail/>} />
+              </Route>
             </Route> 
             <Route path='/recommend' element={<Recommend/>} />
             <Route path='/order' element={<Order/>} />
